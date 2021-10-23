@@ -10,20 +10,35 @@ class BoxList extends Component {
     this.addBox = this.addBox.bind(this);
   }
 
-  addBox(box) {
+  addBox(newBox) {
     this.setState((st) => {
       return {
-        boxes: [...st.boxes, box],
+        boxes: [...st.boxes, newBox],
       };
     });
   }
+
+  removeBox(boxId) {
+    this.setState((st) => {
+      return { boxes: st.boxes.filter(({ id }) => id !== boxId) };
+    });
+  }
+
   render() {
+    const boxes = this.state.boxes.map(({ width, height, bgColor, id }) => (
+      <Box
+        key={id}
+        id={id}
+        width={width}
+        height={height}
+        bgColor={bgColor}
+        handleRemoveBox={() => this.removeBox(id)}
+      />
+    ));
     return (
       <div>
         <NewBoxForm handleAddBox={this.addBox} />
-        {this.state.boxes.map(({ width, height, bgColor }) => (
-          <Box width={width} height={height} bgColor={bgColor} />
-        ))}
+        {boxes}
       </div>
     );
   }
