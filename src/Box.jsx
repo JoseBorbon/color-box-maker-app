@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Box.css';
 
 class Box extends Component {
   render() {
@@ -8,7 +9,12 @@ class Box extends Component {
       backgroundColor: this.props.bgColor,
     };
 
-    return <div style={boxStyles}></div>;
+    return (
+      <div className="Box-container">
+        <div key={this.props.id} style={boxStyles}></div>
+        <button onClick={this.props.handleRemoveBox}>X</button>
+      </div>
+    );
   }
 }
 
