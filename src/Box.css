@@ -1,0 +1,9 @@
+.Box-container {
+  display: flex;
+}
+
+.Box-container button {
+  height: 25%;
+  width: 5%;
+  margin-top: auto;
+}
