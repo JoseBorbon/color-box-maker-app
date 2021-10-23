@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/color-box-maker-app/static/css/main.51904e50.chunk.css",
+    "main.js": "/color-box-maker-app/static/js/main.65ae5802.chunk.js",
+    "main.js.map": "/color-box-maker-app/static/js/main.65ae5802.chunk.js.map",
+    "runtime-main.js": "/color-box-maker-app/static/js/runtime-main.56ab556b.js",
+    "runtime-main.js.map": "/color-box-maker-app/static/js/runtime-main.56ab556b.js.map",
+    "static/js/2.08d11ff1.chunk.js": "/color-box-maker-app/static/js/2.08d11ff1.chunk.js",
+    "static/js/2.08d11ff1.chunk.js.map": "/color-box-maker-app/static/js/2.08d11ff1.chunk.js.map",
+    "index.html": "/color-box-maker-app/index.html",
+    "static/css/main.51904e50.chunk.css.map": "/color-box-maker-app/static/css/main.51904e50.chunk.css.map",
+    "static/js/2.08d11ff1.chunk.js.LICENSE.txt": "/color-box-maker-app/static/js/2.08d11ff1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.56ab556b.js",
+    "static/js/2.08d11ff1.chunk.js",
+    "static/css/main.51904e50.chunk.css",
+    "static/js/main.65ae5802.chunk.js"
+  ]
+}
